@@ -53,7 +53,8 @@
  });
 
 
- //Funcion que segun el argumento me va a cambiar la data
+ //Funcion que segun el argumento me va a cambiar la data segun el genero a femenino, masculino,
+ // desconocido o una data ordenada.
  const showData = (type) => {
      let dataSelected = [];
      if (type === "male") {
@@ -71,6 +72,7 @@
          dataSelected = ordenada.slice();
      }
 
+     //declaro una constante con mi contenedor de cards
      const containerr = document.getElementById("container-cardss");
 
      for (let i = 0; i < dataSelected.length; i++) {
@@ -117,6 +119,8 @@
 
      }
 
+
+     //boton de limpiar
      document.getElementById("clear").addEventListener('click', () => {
          location.reload()
      });
