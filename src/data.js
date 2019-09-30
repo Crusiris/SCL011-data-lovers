@@ -8,9 +8,6 @@ window.filter = {
         //Usando el metodo filter para obtener solo los array donde gender = male (Usando funcion flecha)
         let male = ricks.filter(obj => (obj.gender === "Male"));
 
-
-
-
         //Retorno el resultado para recogerlo en el main.js
         return male;
 
@@ -52,16 +49,11 @@ window.filter = {
         return ricks;
 
     },
-    
-    apparitionPercent: (episodes) => {
-        let percentajeTotal = Math.round((episodes * 100) / 31);
-        return percentajeTotal;
-    
-      }
-    
+
+
+
 
 
 
 
 }
-
